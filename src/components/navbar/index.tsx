@@ -128,7 +128,7 @@ export const Navbar = () => {
               'dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5',
             )}
           >
-            {isConnected ? `${activeAddress.slice(0, 10)}...` : 'Connect wallet'}
+            {isConnected ? `${activeAddress.slice(0, 10)}...` : 'Connect with Pera'}
           </button>
           {isConnected && (
             <button
@@ -140,7 +140,7 @@ export const Navbar = () => {
                 'dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5',
               )}
             >
-              Donate
+              Donate 1 ALGO
             </button>
           )}
         </div>

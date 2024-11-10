@@ -307,7 +307,11 @@ export const AtomicSwap = () => {
               : ''
           }
           label="Asset to swap from"
-          placeholder="Asset to swap from"
+          placeholder={
+            !gettingSenderAssets && !senderAssets.length
+              ? `Your account does not have any assets you can swap from`
+              : 'Asset to swap from'
+          }
           onChange={(value) => {
             const targetAssetName = value.split(' (')[0];
             const targetAsset = senderAssets.find((asset) => asset.name === targetAssetName);
